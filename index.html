@@ -23,16 +23,6 @@
 		<link href="stylesheets/style.css?v=2.0" rel="stylesheet" type='text/css' />
 		
 		<script src="scripts/external/modernizr-2.min.js"></script>
-
-		<style type="text/css">
-			/* Hacks - remove when we get the covers online */
-			#cover-area {
-				display: none;
-			}
-			h2 {
-				margin: 60px 0 72px 0;
-			}
-		</style>
 	</head>
 	<body>
 		<div id="container">
@@ -40,9 +30,9 @@
 				<h1>Radio Syndikatet</h1> <!-- TODO -->
 			</header>
 			<section id="main">
-				<h2>Lige nu: <em id="current-track"></em></h2>
+				<h2>I dag: <em id="current-program"></em></h2>
 				
-				<div id="cover-area"><img src="covers/1.jpg" id="cover-1" alt="" title="" /></div>
+				<div id="cover-area"><img src="covers/spolopradio.jpg" id="cover" alt="" title="" /></div>
 				
 				<div id="player-interface">
 					<div id="button"><a id="button-play" href="#">Afspil</a><a id="button-stop" href="#">Stop</a></div>
@@ -55,6 +45,7 @@
 				<footer>
 					<ul>
 						<li><a href="#programmer">Programmer</a></li>
+						<li><a href="#arkiv">Arkiv</a></li>
 						<li><a href="#om-radio-syndikatet">Om Radio Syndikatet</a></li>
 						<li><a href="#hjaelp">Hjælp</a></li>
 					</ul>
@@ -62,14 +53,17 @@
 			</section>
 			
 			<section id="subpages">
-				<article id="subpage-om-radioen">
-					<h3>Om radioen</h3>
+				<article id="subpage-programmer">
+					<h3>Programmer</h3>
 				</article>
-				<article id="subpage-streaming">
-					<h3>Streaming</h3>
+				<article id="subpage-arkiv">
+					<h3>Arkiv</h3>
 				</article>
-				<article id="subpage-doner">
-					<h3>Donér</h3>
+				<article id="subpage-om-radio-syndikatet">
+					<h3>Om Radio Syndikatet</h3>
+				</article>
+				<article id="subpage-hjaelp">
+					<h3>Hjælp</h3>
 				</article>
 			</section>
 		</div>
@@ -77,10 +71,10 @@
 		<!-- Friendly tips for our users, if they need 'em -->
 		<section id="friendly-tips">
 			<div id="no-js-info">
-				<p>Kære bruger - det lader desværre til at JavaScript er slået fra i din browser - og FolkRadio.dk kan ikke fungere uden. Du kan stædigvek lytte til radioen ved hjælp af direkte streaming - du kan benytte enten vores <a href="">mp3 stream</a>, eller <a href="">ogg stream</a>.</p>
+				<p>Kære bruger - det lader desværre til at JavaScript er slået fra i din browser - og Radio Syndikatet kan ikke fungere uden. Du kan stædigvek lytte til radioen ved hjælp af direkte streaming - du kan benytte enten vores <a href="http://46.4.35.84:8000/radiosyndikatet-256k">MP3 stream</a>.</p>
 			</div>
 			<div id="ie-info">
-				<p>Kære bruger - det lader til at du benytter en forældet internet-browser. Det er muligt at FolkRadio.dk vil stadigvæk fungere hos dig, men vi anbefaler at du opdaterer til den nyeste version af enten <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://getfirefox.com/">Firefox</a> eller <a href="http://www.opera.com/download/">Opera</a> for at få det meste ud af din internet-oplevelse.</p>
+				<p>Kære bruger - det lader til at du benytter en forældet internetbrowser. Det er muligt at Radio Syndikatet stadig fungerer for dig, men vi anbefaler at du opdaterer til den nyeste version af enten <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://getfirefox.com/">Firefox</a> eller <a href="http://www.opera.com/download/">Opera</a> for at få det meste ud af din internet-oplevelse.</p>
 			</div>
 		</section>
 

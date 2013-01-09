@@ -1,28 +1,48 @@
 <?php
-require('/usr/share/php-getid3/getid3.php');
-require('./dbconf.php');
-
 header('Content-Type: application/json');
 
-$getID3 = new getID3;
+$d = date("w");
 
-// get latest filename
+$out = array();
 
-$conn = mysql_connect($dbconf['host'], $dbconf['user'], $dbconf['pass']);
-mysql_select_db($dbconf['base']);
-$q = mysql_query("SELECT filename FROM plays ORDER BY id DESC LIMIT 1");
+date_default_timezone_set("Europe/Copenhagen"); 
 
-$filename = mysql_result($q, 0, 0);
+if (date("G") >= 20 && date("G") < 22) {
+  $out["onair"] = true;
+} else {
+  $out["onair"] = false;
+}
 
-$fileinfo = $getID3->analyze($filename);
+switch($d) {
+	   case 1:
+	   $out["title"] = "SPOL OP! Radio";
+	   $out["cover"] = "covers/spolopradio.jpg";
+	   break;
 
-$jsoninfo = array(	'artist' => utf8_encode($fileinfo['tags']['id3v2']['artist'][0]), 
-			'track' => utf8_encode($fileinfo['tags']['id3v2']['title'][0]), 
-			'album' => utf8_encode($fileinfo['tags']['id3v2']['album'][0]), 
-			'cover_id' => 2, 
-			'time_left' => 10);
+	   case 2:
+	   $out["title"] = "Sorte Får Radio";
+	   $out["cover"] = "covers/sortefar.jpg";
+	   break;
 
-print json_encode($jsoninfo);
+	   case 3:
+	   $out["title"] = "Jazzhatten";
+	   $out["cover"] = "covers/jazzhatten.jpg";
+	   break;
 
+	   case 4:
+	   $out["title"] = "Radio Aktivitet";
+	   $out["cover"] = "covers/radioaktivitet.jpg";
+	   break;
+
+	   case 6:
+	   $out["title"] = "SPOL OPs Gæstemix";
+	   $out["cover"] = "covers/spolopradio.jpg";
+	   break;
+
+	   default:
+	   $out["onair"] = false;
+}
+
+print json_encode($out);
 ?>
 

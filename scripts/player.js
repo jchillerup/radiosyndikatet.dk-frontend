@@ -24,14 +24,13 @@ var Player = {
 					Player.solution = 'flash';
 				}
 			},
-			swfPath: "/frontend/flash/player.swf",
+			swfPath: "/radiosyndikatet/flash/player.swf",
 			supplied: "mp3",
 			solution: "flash, html",
 			volume: 0.5,
 			preload:  "auto",
 			wmode:    "window"
 		});
-		
 		
 		return false;
 	},
