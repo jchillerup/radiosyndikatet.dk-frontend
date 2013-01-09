@@ -19,46 +19,46 @@ strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
 legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
 canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section { 
-	display:block;
+    display:block;
 }
 
 table {
-	border-collapse:collapse;
-	border-spacing:0;
+    border-collapse:collapse;
+    border-spacing:0;
 }
 fieldset,img { 
-	border:0;
+    border:0;
 }
 address,caption,cite,code,dfn,em,strong,th,var {
-	font-style:normal;
-	font-weight:normal;
+    font-style:normal;
+    font-weight:normal;
 }
 ol,ul {
-	list-style:none;
+    list-style:none;
 }
 caption,th {
-	text-align:left;
+    text-align:left;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-	font-weight:normal;
+    font-size:100%;
+    font-weight:normal;
 }
 q:before,q:after {
-	content:'';
+    content:'';
 }
 abbr,acronym {
-	border:0;
+    border:0;
 }
 
 /* HACKS / TRICKS
@@ -69,192 +69,188 @@ a:hover, a:active { outline: none; }
 /* LAYOUT STYLES 
  *****************************************************************************/
 body {	
-	color: #6b352e;
-	background-color: #faf9ed;
-	font: 14px/24px "Droid Serif", Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif;
+    color: #000;
+    background-color: #fff;
+    font: 14px/24px "Droid Serif", Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif;
 }
 
 a {
-	text-decoration: underline;
-	color: #bd3827;
+    text-decoration: underline;
+    color: #bd3827;
 }
 
 a:hover {
-	color: #43140e;
+    color: #43140e;
 }
 
 p {
-	margin: 0 0 12px 0;
+    margin: 0 0 12px 0;
 }
 
 em {
-	font-style: italic;
+    font-style: italic;
 }
 
 strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 #subpages ul li {
-	background: transparent url(../images/bullet.png) no-repeat 0px 0px;
-	padding: 0 0 0 20px;
+    background: transparent url(../images/bullet.png) no-repeat 0px 0px;
+    padding: 0 0 0 20px;
 }
 
 
 /* Setting the background properly, avoiding min-height if possivle.
  **/
 .multiplebgs body {
-	background: url(../images/ornament-bg.jpg) no-repeat center top, url(../images/bg.jpg) repeat left top;
 }
 
 .no-multiplebgs body {
-	background: url(../images/bg.jpg) top left repeat;
 }
 
 .no-multiplebgs #container {
-	background: transparent url(../images/ornament-bg.jpg) top center no-repeat;
-	min-height: 780px;
 }
 
 #container {
-	width: 800px;
-	margin: 0 auto;
-	padding: 50px 0 0 0;
-	position: relative;
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    position: relative;
 }
 
 #friendly-tips {
-	position: absolute;
-	top: 15px;
-	left: 50%;
-	width: 600px;
-	margin: 0 0 0 -300px;
-	color: #000;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 600px;
+    margin: 0 0 0 -300px;
+    color: #000;
 }
 
-	#friendly-tips div {
-		border: 5px solid #b00;
-		padding: 10px;
-		margin: 10px 0 0 0;
-		background: #fff;
-	}
-		#friendly-tips div p:last-child {
-			margin-bottom: 0;
-		}
+#friendly-tips div {
+    border: 5px solid #b00;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    background: #fff;
+}
+#friendly-tips div p:last-child {
+    margin-bottom: 0;
+}
 
-	.no-js #no-js-info, .ie6 #ie-info, .ie7 #ie-info, .ie8 #ie-info,
-	.no-js #friendly-tips, .ie6 #friendly-tips, .ie7 #friendly-tips,
-	.ie8 #friendly-tips {
-		display: block;
-		visibility: visible;
-	}
+.no-js #no-js-info, .ie6 #ie-info, .ie7 #ie-info, .ie8 #ie-info,
+.no-js #friendly-tips, .ie6 #friendly-tips, .ie7 #friendly-tips,
+.ie8 #friendly-tips {
+    display: block;
+    visibility: visible;
+}
 
 /* LOGO
  * Using Brego's magnificent text-replacement technique.
  **/
 h1 {
-	display: block;
-	width: 280px;
-	height: 140px !important;
-	padding: 140px 0 0 0;
-	overflow: hidden;
-	background-image: url(../images/logo.png);
-	background-repeat: no-repeat;
-	height: 0px !important;
-	height /**/:140px;
-	margin: 0 auto;
+    display: block;
+    width: 279px;
+    height: 96px !important;
+    padding: 96px 0 0 0;
+    overflow: hidden;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    height: 0px !important;
+    height /**/:96px;
+    margin: 0 auto;
 }
 
 /* NOW PLAYING
  * Check out the em-subtitle technique below.
  **/
 h2 {
-	font-size: 14px;
-	line-height: 30px;
-	margin: 28px 0 50px 0;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	text-shadow: 0px 0px 2px #d1c1ae;
-	text-shadow: 0 0 3px rgba(0, 0, 0, .22);
+    font-size: 14px;
+    line-height: 30px;
+    margin: 28px 0 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 2px #d1c1ae;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .22);
 }
 
 h2 em {
-	font-size: 26px;
-	display: block;
-	color: #904036;
-	letter-spacing: 0px;
-	text-transform: none;
-	line-height: 30px;
-	text-shadow: 0 0 5px #dfcaae;
-	text-shadow: 0 0 2px rgba(0, 0, 0, .20);
-	font-style: normal;
-	overflow: hidden;
-	white-space: nowrap;
-	-o-text-overflow: ellipsis;
-	text-overflow:    ellipsis;
+    font-size: 26px;
+    display: block;
+    color: #904036;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 30px;
+    text-shadow: 0 0 5px #dfcaae;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .20);
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow:    ellipsis;
 }
 
 #cover-area {
-	width: 150px;
-	height: 150px;
-	margin: 0 auto 25px auto;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 25px auto;
 }
 
-	#cover-area img {
-		width: 150px;
-		height: 150px;
-		border: 1px solid #cacabf;
-		
-		-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .20);
-		-moz-box-shadow:    0 0 2px rgba(0, 0, 0, .20);
-		-o-box-shadow:      0 0 2px rgba(0, 0, 0, .20);
-		box-shadow:         0 0 2px rgba(0, 0, 0, .20);
-	}
+#cover-area img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #cacabf;
+    
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .20);
+    -moz-box-shadow:    0 0 2px rgba(0, 0, 0, .20);
+    -o-box-shadow:      0 0 2px rgba(0, 0, 0, .20);
+    box-shadow:         0 0 2px rgba(0, 0, 0, .20);
+}
 
 /* Just box shadow for modern browsers. Nothing fancy.
  **/
 #cover, #button, #volume {
-	-webkit-box-shadow: 0px 0px 5px #e3d7c9;
-	-moz-box-shadow:    0px 0px 5px #e3d7c9;
-	-o-box-shadow:      0px 0px 5px #e3d7c9;
-	box-shadow:         0px 0px 5px #e3d7c9;
+    -webkit-box-shadow: 0px 0px 5px #e3d7c9;
+    -moz-box-shadow:    0px 0px 5px #e3d7c9;
+    -o-box-shadow:      0px 0px 5px #e3d7c9;
+    box-shadow:         0px 0px 5px #e3d7c9;
 }
 
 /* FOOTER
  **/
 footer {
-	padding: 20px 0 20px 0;
-	text-align: center;
-	color: #ac918d;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: #ac918d;
 }
 
-	footer ul li {
-		display: inline;
-	}
+footer ul li {
+    display: inline;
+}
 
 /* Some tomfoolery with :before, :first-child and content used for separators.
  **/
-	footer ul li:before { content: "• "; }
-	footer ul li:first-child:before { content: ""; }
+footer ul li:before { content: "• "; }
+footer ul li:first-child:before { content: ""; }
 
-	footer a {
-		font-size: 14px;
-		text-decoration: none;
-		color: #9c7f7b;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		text-shadow: 0px 0px 2px #c8dfc0;
-		padding: 0 10px 0 10px;
-	}
+footer a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #9c7f7b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 2px #c8dfc0;
+    padding: 0 10px 0 10px;
+}
 
-	footer ul li a:hover {
-		color: #d73915;
-	}
+footer ul li a:hover {
+    color: #d73915;
+}
 
-	.no-textshadow footer a {
-		color: #a66;
-	}
+.no-textshadow footer a {
+    color: #a66;
+}
 
 
 /* INTERFACE & BEHAVIOR STYLES
@@ -269,138 +265,138 @@ footer {
 #volume,
 #friendly-tips,
 #friendly-tips div
- {
-	display: none;
-	visibility: none;
+{
+    display: none;
+    visibility: none;
 }
 
 #subpages {
-	position: absolute;
-	top: 200px;
-	left: 100px;
-	width: 600px;
-	padding: 0 0 50px 0;
-	z-index: 1002;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 600px;
+    padding: 0 0 50px 0;
+    z-index: 1002;
 }
-	#subpages-close {
-		position: absolute;
-		top: -14px;
-		left: 585px;
-		display: block;
-		width: 28px;
-		height: 28px;
-		background: transparent url(../images/subpage-close.png) no-repeat left top;
-		z-index: 1003;
-	}
-	
-	#subpages-close:hover {
-		background: transparent url(../images/subpage-close.png) no-repeat 0px -28px;
-	}
-	
-	#subpages article {
-		min-height: 430px;
-		padding: 10px 20px 10px 20px;
-		background: #faf9f5;
-		border: 2px solid #dbdad3;
-		-webkit-box-shadow: 0px 0px 15px #e3d7c9;
-		-moz-box-shadow:    0px 0px 15px #e3d7c9;
-		-o-box-shadow:      0px 0px 15px #e3d7c9;
-		box-shadow:         0px 0px 15px #e3d7c9;
-	}
-	
-	#subpages article h3 {
-		color: #a43311;
-		text-shadow: 0px 0px 2px #c3bbaa;
-		font-size: 20px;
-		line-height: 48px;
-		text-align: center;
-	}
-	
-	#subpages article img {
-		float: left;
-		margin: 6px 10px 6px 0;
-	}
+#subpages-close {
+    position: absolute;
+    top: -14px;
+    left: 585px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: transparent url(../images/subpage-close.png) no-repeat left top;
+    z-index: 1003;
+}
 
-	#subpages article p:last-child {
-		margin: 0;
-	}
-	
-	#subpages-overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		cursor: default;
-		background-color: transparent;
-		background-color: rgba(0, 0, 0, .08);
-		z-index: 1001;
-	}
+#subpages-close:hover {
+    background: transparent url(../images/subpage-close.png) no-repeat 0px -28px;
+}
+
+#subpages article {
+    min-height: 430px;
+    padding: 10px 20px 10px 20px;
+    background: #faf9f5;
+    border: 2px solid #dbdad3;
+    -webkit-box-shadow: 0px 0px 15px #e3d7c9;
+    -moz-box-shadow:    0px 0px 15px #e3d7c9;
+    -o-box-shadow:      0px 0px 15px #e3d7c9;
+    box-shadow:         0px 0px 15px #e3d7c9;
+}
+
+#subpages article h3 {
+    color: #a43311;
+    text-shadow: 0px 0px 2px #c3bbaa;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#subpages article img {
+    float: left;
+    margin: 6px 10px 6px 0;
+}
+
+#subpages article p:last-child {
+    margin: 0;
+}
+
+#subpages-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, .08);
+    z-index: 1001;
+}
 
 #button.loader, #button.loader:hover {
-	background-color: #efedd9;
-	background-image: url(../images/loader.gif);
-	background-repeat: no-repeat;
-	background-position: center center;
-	cursor: default;
+    background-color: #efedd9;
+    background-image: url(../images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: default;
 }
 
 #volume-area {
-	height: 60px;
+    height: 60px;
 }
 
 #button, #volume {
-	width: 150px;
-	height: 23px;
-	background-color: #efedd9;
-	margin: 0 auto 10px auto;
-	border: 1px solid #ddddd1;
-	-webkit-border-radius: 4px;
-	-khtml-border-radius:  4px;
-	-moz-border-radius:    4px;
-	-ms-border-radius:     4px;
-	-o-border-radius:      4px;
-	border-radius:         4px;
-	-webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
-	-khtml-box-shadow:  1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
-	-moz-box-shadow:    1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
-	-ms-box-shadow:     1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
-	-o-box-shadow:      1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
-	box-shadow:         1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
+    width: 150px;
+    height: 23px;
+    background-color: #efedd9;
+    margin: 0 auto 10px auto;
+    border: 1px solid #ddddd1;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius:  4px;
+    -moz-border-radius:    4px;
+    -ms-border-radius:     4px;
+    -o-border-radius:      4px;
+    border-radius:         4px;
+    -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
+    -khtml-box-shadow:  1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
+    -moz-box-shadow:    1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
+    -ms-box-shadow:     1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
+    -o-box-shadow:      1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
+    box-shadow:         1px 1px 0px rgba(0, 0, 0, .04), inset 1px 1px 0 rgba(255, 255, 255, .55);
 }
 
 #button {
-	line-height: 23px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	cursor: pointer;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, .75);
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .75);
 }
-	#button:active {
-		-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
-		-khtml-box-shadow:  inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
-		-moz-box-shadow:    inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
-		-ms-box-shadow:     inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
-		-o-box-shadow:      inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
-		box-shadow:         inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
-	}
-	#button:hover {
-		background-color: #ebe5d3;
-		text-shadow: 1px 1px 0 rgba(255, 255, 255, .45);
-	}
+#button:active {
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
+    -khtml-box-shadow:  inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
+    -moz-box-shadow:    inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
+    -ms-box-shadow:     inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
+    -o-box-shadow:      inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
+    box-shadow:         inset 1px 1px 0 rgba(0,0,0,.02), 1px 1px 0 rgba(255, 255, 255, 0.65);
+}
+#button:hover {
+    background-color: #ebe5d3;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .45);
+}
 
-	#button a {
-		text-decoration: none;
-		color: #805045;
-		display: block;
-	}
+#button a {
+    text-decoration: none;
+    color: #805045;
+    display: block;
+}
 
-		#button a#button-play {
-			/*padding: 0 10px 0 0;
-			background: transparent url(../images/play.png) no-repeat 106px 6px;*/
-		}
+#button a#button-play {
+/*padding: 0 10px 0 0;
+  background: transparent url(../images/play.png) no-repeat 106px 6px;*/
+}
 
-		#button a#button-stop {
-			display: none;
-		}
+#button a#button-stop {
+    display: none;
+}
