@@ -34,9 +34,19 @@ switch($d) {
 	   $out["cover"] = "covers/radioaktivitet.jpg";
 	   break;
 
+	   case 4:
+	   $out["title"] = "Ingen udsendelse";
+	   $out["cover"] = "covers/offair.jpg";
+	   break;
+
 	   case 6:
 	   $out["title"] = "SPOL OPs Gæstemix";
 	   $out["cover"] = "covers/spolopradio.jpg";
+	   break;
+
+	   case 0:
+	   $out["title"] = "Ingen udsendelse";
+	   $out["cover"] = "covers/offair.jpg";
 	   break;
 
 	   default:
