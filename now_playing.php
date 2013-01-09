@@ -44,7 +44,7 @@ switch($d) {
 	   $out["cover"] = "covers/spolopradio.jpg";
 	   break;
 
-	   case 0:
+	   case 3:
 	   $out["title"] = "Ingen udsendelse";
 	   $out["cover"] = "covers/offair.jpg";
 	   break;

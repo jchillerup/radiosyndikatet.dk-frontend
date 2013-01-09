@@ -343,6 +343,7 @@ footer ul li a:hover {
 
 #volume-area {
     height: 60px;
+    display:none;
 }
 
 #button, #volume {
