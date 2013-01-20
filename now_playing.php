@@ -45,12 +45,11 @@ switch($d) {
 	   break;
 
 	   case 3:
+	   default:
+           $out["onair"] = false;
 	   $out["title"] = "Ingen udsendelse";
 	   $out["cover"] = "covers/offair.jpg";
 	   break;
-
-	   default:
-	   $out["onair"] = false;
 }
 
 print json_encode($out);

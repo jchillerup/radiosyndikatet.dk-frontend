@@ -6,67 +6,70 @@
  **/
 
 var Subpages = {
-	overlay:  null,
-	subpages: null,
-	close:    null,
-	visible:  false,
-	
-	init: function() {
-		this.overlay = $('<a href="#radio" id="subpages-overlay"></a>');
-		$('body').append(this.overlay);
+    overlay:  null,
+    subpages: null,
+    close:    null,
+    visible:  false,
+    
+    init: function() {
+	this.overlay = $('<a href="#radio" id="subpages-overlay"></a>');
+	$('body').append(this.overlay);
 
-		this.subpages = $('#subpages');
+	this.subpages = $('#subpages');
 
-		this.close = $('<a href="#radio" id="subpages-close" title="Luk"></a>');
-		this.subpages.append(this.close);
+	this.close = $('<a href="#radio" id="subpages-close" title="Luk"></a>');
+	this.subpages.append(this.close);
 
-		$(window).resize(function() {
-			Subpages.overlay.height($(window).height());
-			Subpages.overlay.width($(window).width());
-		});
+	$(window).resize(function() {
+	    Subpages.overlay.height($(window).height());
+	    Subpages.overlay.width($(window).width());
+	});
 
-		$(window).hashchange(function() {
-			hash = location.hash;
-			if (hash !== '' && hash !== '#radio') {
-				log('HashChange: "'+hash+'"');
+	$(window).hashchange(function() {
+	    hash = location.hash;
+	    if (hash !== '' && hash !== '#radio') {
+		log('HashChange: "'+hash+'"');
 
-				if (Subpages.visible) {
-					Subpages.change(hash);
-				} else {
-					Subpages.show(hash);
-				}
-			} else if (hash == '#radio') {
-				Subpages.hide();
-			}
-		});
+		if (Subpages.visible) {
+		    Subpages.change(hash);
+		} else {
+		    Subpages.show(hash);
+		}
+	    } else if (hash == '#radio') {
+		Subpages.hide();
+	    }
+	});
 
-		$(window).hashchange();
-	},
-	
-	show: function(name) {
-		log('Subpages: show');
+	$(window).hashchange();
+    },
+    
+    show: function(name) {
+	log('Subpages: show');
 
-		this.overlay.show();
-		this.subpages.show();
+	this.overlay.show();
+	this.subpages.show();
 
-		$('#subpage-'+name.substr(1)).add(this.close).add(this.overlay).fadeIn(250);
-		this.visible = true;
-	},
+	$('#subpage-'+name.substr(1)).add(this.close).add(this.overlay).fadeIn(250);
+        $('#player-interface').css('visibility', 'hidden');
+        
+	this.visible = true;
+    },
 
-	change: function(name) {
-		log('Subpages: change');
+    change: function(name) {
+	log('Subpages: change');
 
-		$('article:visible', this.subpages).add(this.close).fadeOut(150, function() {
-			$('#subpage-'+name.substr(1)).add(Subpages.close).fadeIn(150);
-		});
-	},
+	$('article:visible', this.subpages).add(this.close).fadeOut(150, function() {
+	    $('#subpage-'+name.substr(1)).add(Subpages.close).fadeIn(150);
+	});
+    },
 
-	hide: function() {
-		$('article:visible', this.subpages).add(this.close).add(this.overlay).fadeOut(250, function() {
-			Subpages.subpages.hide();
-			Subpages.overlay.hide();
-			Subpages.close.hide();
-		});
-		this.visible = false;
-	}
+    hide: function() {
+	$('article:visible', this.subpages).add(this.close).add(this.overlay).fadeOut(250, function() {
+	    Subpages.subpages.hide();
+	    Subpages.overlay.hide();
+	    Subpages.close.hide();
+	});
+        $('#player-interface').css('visibility','visible');
+	this.visible = false;
+    }
 };

@@ -3,95 +3,137 @@
 <!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta http-equiv="imagetoolbar" content="no" />
-		<meta name="MSSmartTagsPreventParsing" content="true" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
 
-		<!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> -->
 
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="KodeKode <info@kodekode.dk>" />
-		<meta name="copyright" content="2013 Jens Christian Hillerup" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="KodeKode <info@kodekode.dk>" />
+    <meta name="copyright" content="2013 Jens Christian Hillerup, adapted from a theme for FolkRadio.dk by Kamil 'Brego' Dzieliński" />
 
-		<title>Radio Syndikatet</title>
-		
-		<!-- Loading the font from google -->
-		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />
-		<link href="stylesheets/style.css?v=2.0" rel="stylesheet" type='text/css' />
-		
-		<script src="scripts/external/modernizr-2.min.js"></script>
-	</head>
-	<body>
-		<div id="container">
-			<header>
-				<h1>Radio Syndikatet</h1> <!-- TODO -->
-			</header>
-			<section id="main">
-				<h2>I dag: <em id="current-program"></em></h2>
-				
-				<div id="cover-area"><img src="covers/spolopradio.jpg" id="cover" alt="" title="" /></div>
-				
-				<div id="player-interface">
-					<div id="button"><a id="button-play" href="#">Afspil</a><a id="button-stop" href="#">Stop</a></div>
-					<div id="volume-area">
-						<div id="volume"></div>
-					</div>
-					
-					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-				</div>
-				<footer>
-					<ul>
-						<li><a href="#programmer">Programmer</a></li>
-						<li><a href="#arkiv">Arkiv</a></li>
-						<li><a href="#om-radio-syndikatet">Om Radio Syndikatet</a></li>
-					</ul>
-				</footer>
-			</section>
-			
-			<section id="subpages">
-				<article id="subpage-programmer">
-					<h3>Programmer</h3>
-				</article>
-				<article id="subpage-arkiv">
-					<h3>Arkiv</h3>
-				</article>
-				<article id="subpage-om-radio-syndikatet">
-					<h3>Om Radio Syndikatet</h3>
-					<p>Radio Syndikatet tilbyder specialproducerede programmer, som hovedsageligt henvender sig til et nichepublikum. Det kan eksempelvis være et ugentligt program om Italo Disco eller Hip Hop, eller et månedligt program om relationen mellem Jazz og Hip Hop.</p>
+    <title>Radio Syndikatet</title>
+    
+    <!-- Loading the font from google -->
+    <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/style.css?v=2.0" rel="stylesheet" type='text/css' />
+    
+    <script src="scripts/external/modernizr-2.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+	<h1>Radio Syndikatet</h1> <!-- TODO -->
+      </header>
+      <section id="main">
+	<h2>I dag kl. 20&ndash;22: <em id="current-program"></em></h2>
+	
+	<div id="cover-area">
+          <div id="cover">
+            <img src="covers/offair.jpg" id="cover" alt="" title="" />
+          </div>
 
-					<p>Radio Syndikatet er en internetradio og kan således høres fra enhver computer. Derudover vil det være muligt at streame alle programmerne "on-demand", hvilket ganske enkelt betyder man kan lytte til de enkelte programmer når man vil og hvor man vil.</p>
+          <div id="flipside">
+            <h2>Overskrift</h2>
+            <p>Beskrivelsestekst her.</p>
+          </div>
+        </div>
+	
+	<div id="player-interface">
+          <!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+          <script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
+          <script type="text/javascript">
+            MRP.insert({
+            'url':'http://rs.kodekode.dk:8000/radiosyndikatet-128k',
+            'codec':'mp3',
+            'volume':100,
+            'autoplay':false,
+            'buffering':1,
+            'title':'Radio%20Syndikatet',
+            'bgcolor':'#FFFFFF',
+            'skin':'original',
+            'width':329,
+            'height':21
+            });
+          </script>
+          <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+          
+          <!-- <div id="button"><a id="button-play" href="#">Afspil</a><a id="button-stop" href="#">Stop</a></div> -->
+	  <!-- <div id="volume-area"> -->
+	  <!--   <div id="volume"></div> -->
+	  <!-- </div> -->
+	  
+	  <!-- <div id="jquery_jplayer_1" class="jp-jplayer"></div> -->
+	</div>
+	<footer>
+	  <ul>
+	    <li><a href="#programmer">Programmer</a></li>
+	    <li><a href="#arkiv">Arkiv</a></li>
+	    <li><a href="#om-radio-syndikatet">Om Radio Syndikatet</a></li>
+	  </ul>
+	</footer>
+      </section>
+      
+      <section id="subpages">
+	<article id="subpage-programmer" style="">
+	  <h3>Programmer</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla tempus libero, at consectetur nisl facilisis et. Curabitur volutpat pulvinar nunc, ac luctus quam molestie eu. Suspendisse in libero risus, eget volutpat ante. Nulla ornare sollicitudin sollicitudin. Ut fringilla mi et lectus fermentum facilisis. Fusce et purus arcu. Duis lobortis iaculis lectus id convallis. Vivamus purus arcu, venenatis ac imperdiet at, viverra cursus lorem. Donec tristique magna purus. Nunc vehicula commodo quam sed feugiat. Donec blandit malesuada dui, vitae tincidunt erat auctor venenatis. Donec posuere est quis orci gravida ut dapibus nulla semper. Nam leo massa, lacinia ut scelerisque sed, convallis sed tortor. Nam eu volutpat urna.</p>
 
-					<p>Radio Syndikatet har indgået aftaler med KODA og Gramex for at sikre at vi kan blive ved med at spille præcis den musik vil vil, når vi vil.</p>
-					<p>Har du spørgsmål eller ønsker du blot at tage kontakt til Radio Syndikatet, så fang os på <a href="mailto:radiosyndikatet@gmail.com">radiosyndikatet@gmail.com</a>.</p>
-				</article>
-			</section>
-		</div>
+<p>Vivamus justo dui, vulputate sit amet facilisis quis, lobortis et magna. Pellentesque mollis felis vel dui posuere sagittis. Nunc bibendum aliquam blandit. Nam placerat diam non nunc tincidunt dapibus. Etiam suscipit, sapien quis bibendum posuere, augue dui volutpat justo, in condimentum dolor quam et ipsum. Sed nec augue lectus, eget egestas nisl. Ut vestibulum suscipit diam. Vivamus sed sapien urna. Donec nunc nisi, pellentesque ac pulvinar vel, consequat sit amet eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent et ligula purus.</p>
 
-		<!-- Friendly tips for our users, if they need 'em -->
-		<section id="friendly-tips">
-			<div id="no-js-info">
-				<p>Kære bruger - det lader desværre til at JavaScript er slået fra i din browser - og Radio Syndikatet kan ikke fungere uden. Du kan stædigvek lytte til radioen ved hjælp af direkte streaming - du kan benytte enten vores <a href="http://46.4.35.84:8000/radiosyndikatet-256k">MP3 stream</a>.</p>
-			</div>
-			<div id="ie-info">
-				<p>Kære bruger - det lader til at du benytter en forældet internetbrowser. Det er muligt at Radio Syndikatet stadig fungerer for dig, men vi anbefaler at du opdaterer til den nyeste version af enten <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://getfirefox.com/">Firefox</a> eller <a href="http://www.opera.com/download/">Opera</a> for at få det meste ud af din internet-oplevelse.</p>
-			</div>
-		</section>
+<p>Pellentesque aliquet, enim volutpat vulputate mollis, lectus urna aliquet lacus, ac faucibus ipsum mauris ac elit. Sed gravida condimentum augue quis mattis. Maecenas nec nunc risus, eu aliquet est. Maecenas a nunc odio, id tempor arcu. Nullam cursus est ac lacus auctor eu placerat massa varius. Suspendisse vulputate egestas sapien ac tempor. Vivamus euismod, mi semper euismod elementum, arcu felis faucibus arcu, sed tempor leo tortor at diam. Nullam nec lorem et ipsum suscipit pretium pharetra ut urna. Cras viverra ligula quis velit volutpat egestas.</p>
 
-		<!-- Loading jQuery from google -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="scripts/external/jquery-1.6.4.min.js"><\/script>')</script>
+<p>Etiam aliquam semper turpis ac cursus. Vestibulum volutpat tristique gravida. Nam tortor lorem, vestibulum id bibendum at, molestie id urna. Sed nec eros orci. Suspendisse potenti. Aliquam pretium vehicula eros et porttitor. Maecenas id lacus lectus. Nulla non nibh massa, nec faucibus elit. Pellentesque facilisis turpis non felis pellentesque cursus. Nunc mauris neque, pretium sed fermentum quis, adipiscing sed metus. Curabitur fringilla lorem in nulla consectetur sagittis. In ultrices malesuada volutpat. Nam posuere hendrerit consectetur.</p>
 
-		<!-- External JS -->
-		<script src="scripts/external/jquery.ba-hashchange-1.3.min.js"></script>
-		<script src="scripts/external/jquery.jplayer-2.1.0.min.js"></script>
+<p>Mauris metus tellus, tincidunt id condimentum in, suscipit vitae nulla. Nam dictum pellentesque fermentum. Nullam gravida augue quis purus scelerisque faucibus. Phasellus tristique, felis quis malesuada vestibulum, enim quam adipiscing libero, non adipiscing orci diam sit amet nulla. Fusce quis sem purus, tincidunt porttitor libero. In in nibh nisi. Aliquam ultrices quam ac erat hendrerit luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce non lacus eros, ut convallis dolor.</p>
+	</article>
+	<article id="subpage-arkiv">
+	  <h3>Arkiv</h3>
+          <p>Kommer snart.</p>
+	</article>
+	<article id="subpage-om-radio-syndikatet">
+	  <h3>Om Radio Syndikatet</h3>
+	  <p>Radio Syndikatet tilbyder specialproducerede programmer, som hovedsageligt henvender sig til et nichepublikum. Det kan eksempelvis være et ugentligt program om Italo Disco eller Hip Hop, eller et månedligt program om relationen mellem Jazz og Hip Hop.</p>
 
-		<!-- Custom JS -->
-		<script src="scripts/subpages.js"></script>
-		<script src="scripts/player.js"></script>
-		<script src="scripts/player-interface.js"></script>
-		<script src="scripts/behavior.js"></script>
-	</body>
+	  <p>Radio Syndikatet er en internetradio og kan således høres fra enhver computer. Derudover vil det være muligt at streame alle programmerne "on-demand", hvilket ganske enkelt betyder man kan lytte til de enkelte programmer når man vil og hvor man vil.</p>
+
+	  <p>Radio Syndikatet har indgået aftaler med KODA og Gramex for at sikre at vi kan blive ved med at spille præcis den musik vil vil, når vi vil.</p>
+	  <p>Har du spørgsmål eller ønsker du blot at tage kontakt til Radio Syndikatet, så fang os på <a href="mailto:radiosyndikatet@gmail.com">radiosyndikatet@gmail.com</a>.</p>
+
+          <p style="text-align: center;"><img src="images/gramex.png" style="width: 173px; height: 33px; float:inherit;"> <img src="images/koda.png" style="height: 33px; float:inherit;"></p>
+	</article>
+      </section>
+    </div>
+
+    <!-- Friendly tips for our users, if they need 'em -->
+    <section id="friendly-tips">
+      <div id="no-js-info">
+	<p>Kære bruger - det lader desværre til at JavaScript er slået fra i din browser - og Radio Syndikatet kan ikke fungere uden. Du kan stædigvek lytte til radioen ved hjælp af direkte streaming - du kan benytte enten vores <a href="http://46.4.35.84:8000/radiosyndikatet-256k">MP3 stream</a>.</p>
+      </div>
+      <div id="ie-info">
+	<p>Kære bruger - det lader til at du benytter en forældet internetbrowser. Det er muligt at Radio Syndikatet stadig fungerer for dig, men vi anbefaler at du opdaterer til den nyeste version af enten <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://getfirefox.com/">Firefox</a> eller <a href="http://www.opera.com/download/">Opera</a> for at få det meste ud af din internet-oplevelse.</p>
+      </div>
+    </section>
+
+    <!-- Loading jQuery from google -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/external/jquery-1.6.4.min.js"><\/script>')</script>
+
+      <!-- External JS -->
+      <script src="scripts/external/jquery-ui-1.10.0.custom.min.js"></script>
+      <script src="scripts/external/jquery.ba-hashchange-1.3.min.js"></script>
+      <script src="scripts/external/jquery.jplayer-2.1.0.min.js"></script>
+      <script src="scripts/external/jquery.flip.js"></script>
+
+      <!-- Custom JS -->
+      <script src="scripts/subpages.js"></script>
+      <script src="scripts/player.js"></script>
+      <script src="scripts/player-interface.js"></script>
+      <script src="scripts/behavior.js"></script>
+  </body>
 </html>

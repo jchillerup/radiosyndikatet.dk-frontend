@@ -18,7 +18,28 @@ window.log = function() {
 };
 
 $(function() {
-	Player.init('#jquery_jplayer_1', {mp3: "http://46.4.35.84:8000/radiosyndikatet-256k"});
-	PlayerInterface.init();
-	Subpages.init();
+    Player.init('#jquery_jplayer_1', {mp3: "http://46.4.35.84:8000/radiosyndikatet-256k"});
+    PlayerInterface.init();
+    Subpages.init();
+    
+    window.flipped = false;
+
+    $("#cover-area").click(function() {
+        if (!window.flipped) {
+            $("#cover-area").flip({
+                direction: 'lr',
+                content: $("#flipside"),
+                speed: 250,
+                color: 'white',
+                onAnimation: function() {
+                    $("#cover-area").toggleClass('box-flipped');
+                }
+            });
+            window.flipped = true;
+        } else {
+            $("#cover-area").revertFlip();
+            window.flipped = false;
+        }
+    });
+    
 });

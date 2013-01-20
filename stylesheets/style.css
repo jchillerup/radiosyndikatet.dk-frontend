@@ -71,7 +71,7 @@ a:hover, a:active { outline: none; }
 body {	
     color: #000;
     background-color: #fff;
-    font: 14px/24px "Droid Serif", Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif;
+    font: 14px/24px "Rambla", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -169,7 +169,6 @@ h2 {
     line-height: 30px;
     margin: 35px 0 35px 0;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 0px 0px 2px #d1c1ae;
     text-shadow: 0 0 3px rgba(0, 0, 0, .22);
@@ -197,15 +196,29 @@ h2 em {
     margin: 0 auto 25px auto;
 }
 
-#cover-area img {
+#cover-area {
     width: 350px;
     height: 350px;
     border: 1px solid #cacabf;
-    
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .20);
     -moz-box-shadow:    0 0 2px rgba(0, 0, 0, .20);
     -o-box-shadow:      0 0 2px rgba(0, 0, 0, .20);
     box-shadow:         0 0 2px rgba(0, 0, 0, .20);
+}
+div.box-flipped {
+    padding: 15px;
+}
+
+div #flipside {
+    display: none;
+}
+div.box-flipped #flipside {
+    display: block;
+}
+
+#cover-area h2 {
+    margin: 0px 0px 1.2em 0px;
+    font-size: 1.2em;
 }
 
 /* Just box shadow for modern browsers. Nothing fancy.
@@ -235,10 +248,9 @@ footer ul li:before { content: "• "; }
 footer ul li:first-child:before { content: ""; }
 
 footer a {
-    font-size: 14px;
+    font-size: 17px;
     text-decoration: none;
-    color: #9c7f7b;
-    text-transform: uppercase;
+    color: #000;
     letter-spacing: 2px;
     text-shadow: 0px 0px 2px #c8dfc0;
     padding: 0 10px 0 10px;
@@ -333,6 +345,12 @@ footer ul li a:hover {
     z-index: 1001;
 }
 
+#subpage-programmer {
+    overflow: scroll;
+    height:430px;
+    overflow-x:hidden;
+}
+
 #button.loader, #button.loader:hover {
     background-color: #efedd9;
     background-image: url(../images/loader.gif);
@@ -347,9 +365,9 @@ footer ul li a:hover {
 }
 
 #button, #volume {
-    width: 150px;
-    height: 23px;
-    background-color: #efedd9;
+    width: 175px;
+    height: 30px;
+    background-color: #eee;
     margin: 0 auto 10px auto;
     border: 1px solid #ddddd1;
     -webkit-border-radius: 4px;
@@ -367,7 +385,7 @@ footer ul li a:hover {
 }
 
 #button {
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -400,4 +418,9 @@ footer ul li a:hover {
 
 #button a#button-stop {
     display: none;
+}
+
+
+#player-interface{
+    text-align: center;
 }
