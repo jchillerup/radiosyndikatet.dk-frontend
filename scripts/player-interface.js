@@ -27,7 +27,7 @@ var PlayerInterface = {
 	this.cover_area    = $('#cover-area');
 
 	// Adding the current cover into the cache
-	this.current_cover    = this.cover_area.children('img');
+	this.current_cover    = this.cover_area.find('img');
 
 	// Getting the current track
 	this.query_current_track();
