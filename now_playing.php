@@ -14,6 +14,12 @@ if (date("G") >= 20 && date("G") < 22) {
 }
 
 switch($d) {
+	   case 0:
+	   $out["title"] = "Radio Resistance CPH";
+	   $out["cover"] = "covers/radioresistance.jpg";
+	   break;
+	   
+	   
 	   case 1:
 	   $out["title"] = "SPOL OP! Radio";
 	   $out["cover"] = "covers/spolopradio.jpg";
@@ -30,8 +36,8 @@ switch($d) {
 	   break;
 
 	   case 4:
-	   $out["title"] = "Radio Aktivitet";
-	   $out["cover"] = "covers/radioaktivitet.jpg";
+	   $out["title"] = "Radio Vendetta";
+	   $out["cover"] = "covers/radiovendetta.jpg";
 	   break;
 
 	   case 4:
@@ -40,8 +46,8 @@ switch($d) {
 	   break;
 
 	   case 6:
-	   $out["title"] = "SPOL OPs Gæstemix";
-	   $out["cover"] = "covers/spolopradio.jpg";
+	   $out["title"] = "Ingen udsendelse";
+	   $out["cover"] = "covers/offair.jpg";
 	   break;
 
 	   case 3:
