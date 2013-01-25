@@ -46,25 +46,7 @@
           </div>
         </div>
 	
-	<div id="player-interface">
-          <!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
-          <!-- <script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script> -->
-          <!-- <script type="text/javascript"> -->
-          <!--   MRP.insert({ -->
-          <!--   'url':'http://rs.kodekode.dk:8000/radiosyndikatet-128k', -->
-          <!--   'codec':'mp3', -->
-          <!--   'volume':100, -->
-          <!--   'autoplay':false, -->
-          <!--   'buffering':1, -->
-          <!--   'title':'Radio%20Syndikatet', -->
-          <!--   'bgcolor':'#FFFFFF', -->
-          <!--   'skin':'original', -->
-          <!--   'width':329, -->
-          <!--   'height':21 -->
-          <!--   }); -->
-          <!-- </script> -->
-          <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
-          
+	<div id="player-interface">          
           <div id="button"><a id="button-play" href="#">Afspil</a><a id="button-stop" href="#">Stop</a></div>
 	  <!-- <div id="volume-area"> -->
 	  <!--   <div id="volume"></div> -->
@@ -153,8 +135,72 @@
 	</article>
 	<article id="subpage-arkiv">
 	  <h3>Arkiv</h3>
-          <p>Kommer snart.</p>
-	</article>
+          <!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+          <script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
+          <script type="text/javascript">
+            var gen = function(url) {
+            return {
+            'url':url,
+            'codec':'mp3',
+            'volume':100,
+            'autoplay':false,
+            'buffering':1,
+            'title':'Radio%20Syndikatet',
+            'bgcolor':'#FFFFFF',
+            'skin':'original',
+            'width':329,
+            'height':21
+            };
+            }
+           
+          </script>
+          <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+
+          <table style="width: 100%;">
+            <tr>
+              <td><p>Spol OP! radio d. 21. januar 2013: </p></td>
+              <td>
+                <script>
+                  MRP.insert(gen('http://rs.kodekode.dk/radiosyndikatet-20130121-final.mp3'));
+                </script>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Sorte Får radio d. 22. januar 2013: </p>
+              </td>
+              <td>
+                <script>
+                  MRP.insert(gen('http://rs.kodekode.dk/radiosyndikatet-20130122-2000.mp3'));
+                </script>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <p>Jazzhatten d. 22. januar 2013: </p>
+              </td>
+              <td>
+                <script>
+                  MRP.insert(gen('http://rs.kodekode.dk/radiosyndikatet-20130123-final.mp3'));
+                </script>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Radio Vendetta d. 24. januar 2013: </p>
+              </td>
+              <td>
+                <script>
+                  MRP.insert(gen('http://rs.kodekode.dk/radiosyndikatet-20130124-2000.mp3'));
+                </script>
+              </td>
+            </tr>
+          </table>
+          
+        </article>
 	<article id="subpage-om-radio-syndikatet">
 	  <h3>Om Radio Syndikatet</h3>
 	  <p>Radio Syndikatet tilbyder specialproducerede programmer, som hovedsageligt henvender sig til et nichepublikum. Det kan eksempelvis være et ugentligt program om Italo Disco eller Hip Hop, eller et månedligt program om relationen mellem Jazz og Hip Hop.</p>

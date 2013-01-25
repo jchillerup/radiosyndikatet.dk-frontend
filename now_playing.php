@@ -39,6 +39,11 @@ switch($d) {
 	   break;
 
 	   case 4:
+	   $out["title"] = "Radio Vendetta";
+	   $out["cover"] = "covers/radiovendetta.jpg";
+           $out["flipside"] = file_get_contents('descriptions/radiovendetta.html');
+           break;
+             
 	   case 6:
 	   default:
            $out["onair"] = false;
