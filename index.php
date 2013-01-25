@@ -16,6 +16,12 @@
     <meta name="author" content="KodeKode <info@kodekode.dk>" />
     <meta name="copyright" content="2013 Jens Christian Hillerup, adapted from a theme for FolkRadio.dk by Kamil 'Brego' Dzieliński" />
 
+    <meta property="og:image" content="http://radiosyndikatet.dk/images/logo.png" />
+    <meta property="og:title" content="Radio Syndikatet"/>
+    <meta property="og:url" content="http://radiosyndikatet.dk/"/>
+    <meta property="og:site_name" content="Radio Syndikatet"/>
+
+   
     <title>Radio Syndikatet</title>
     
     <!-- Loading the font from google -->
