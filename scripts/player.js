@@ -24,7 +24,7 @@ var Player = {
 					Player.solution = 'flash';
 				}
 			},
-			swfPath: "/radiosyndikatet/flash/player.swf",
+			swfPath: "/flash/player.swf",
 			supplied: "mp3",
 			solution: "flash, html",
 			volume: 0.5,
