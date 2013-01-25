@@ -28,6 +28,9 @@ var PlayerInterface = {
 
 	// Adding the current cover into the cache
 	this.current_cover    = this.cover_area.find('img');
+        
+        this.flipside = $('#flipdescription');
+        this.flipsideHeader = $('#flipside h2');
 
 	// Getting the current track
 	this.query_current_track();
@@ -43,7 +46,10 @@ var PlayerInterface = {
 	    self.current_cover.attr('src', data.cover);
 	    self.cover_area.fadeIn('fast');
 	    self.current_program.html(data.title);
-	});
+	    
+            self.flipsideHeader.html(data.title);
+            self.flipside.html(data.flipside);
+        });
 
     },
 

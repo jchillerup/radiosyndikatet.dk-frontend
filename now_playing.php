@@ -17,44 +17,34 @@ switch($d) {
 	   case 0:
 	   $out["title"] = "Radio Resistance CPH";
 	   $out["cover"] = "covers/radioresistance.jpg";
-	   break;
-	   
+           $out["flipside"] = file_get_contents('descriptions/radioresistance.html');
+	   break;	   
 	   
 	   case 1:
 	   $out["title"] = "SPOL OP! Radio";
 	   $out["cover"] = "covers/spolopradio.jpg";
+           $out["flipside"] = file_get_contents('descriptions/spolopradio.html');
 	   break;
 
 	   case 2:
 	   $out["title"] = "Sorte Får Radio";
 	   $out["cover"] = "covers/sortefar.jpg";
+           $out["flipside"] = file_get_contents('descriptions/sortefar.html');
 	   break;
 
 	   case 3:
 	   $out["title"] = "Jazzhatten";
 	   $out["cover"] = "covers/jazzhatten.jpg";
+           $out["flipside"] = file_get_contents('descriptions/jazzhatten.html');
 	   break;
 
 	   case 4:
-	   $out["title"] = "Radio Vendetta";
-	   $out["cover"] = "covers/radiovendetta.jpg";
-	   break;
-
-	   case 4:
-	   $out["title"] = "Ingen udsendelse";
-	   $out["cover"] = "covers/offair.jpg";
-	   break;
-
 	   case 6:
-	   $out["title"] = "Ingen udsendelse";
-	   $out["cover"] = "covers/offair.jpg";
-	   break;
-
-	   case 3:
 	   default:
            $out["onair"] = false;
 	   $out["title"] = "Ingen udsendelse";
 	   $out["cover"] = "covers/offair.jpg";
+           $out["flipside"] = file_get_contents('descriptions/offair.html');
 	   break;
 }
 
